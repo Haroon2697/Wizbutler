@@ -198,6 +198,15 @@
     50% { opacity: 1; transform: scale(1.05); }
   }
   
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+  }
+  
   /* Text effects */
   .text-glow {
     text-shadow: 0 0 10px hsl(var(--neon-purple) / 0.8), 
