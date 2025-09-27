@@ -90,7 +90,7 @@ export function Features() {
               whileHover={{ scale: 1.05 }}
               className="glass-card px-6 py-4 flex items-center space-x-3 border-blue-400/20 shadow-[0_0_8px_rgba(59,130,246,0.1)] hover:shadow-[0_0_12px_rgba(59,130,246,0.2)] dark:shadow-[0_0_15px_rgba(251,191,36,0.2)] dark:hover:shadow-[0_0_25px_rgba(251,191,36,0.4)]"
             >
-              <feature.icon className="w-5 h-5 text-[#43217a] dark:text-[#fe9e01] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)] dark:drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
+              <feature.icon className="w-5 h-5 text-[#43217a] dark:text-[#fe9e01] hover:text-[#fe9e01] dark:hover:text-[#43217a] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)] dark:drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
               <span className="font-medium text-foreground font-sans">{feature.text}</span>
             </motion.div>
           ))}

@@ -59,14 +59,14 @@ export function Footer() {
                 href="mailto:joyce@synergysrestaurantgroup.com"
                 className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors magnetic dark:hover:text-yellow-400 font-sans"
               >
-                <Mail className="w-5 h-5 text-[#43217a] dark:text-[#fe9e01] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)] dark:drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
+                <Mail className="w-5 h-5 text-[#43217a] dark:text-[#fe9e01] hover:text-[#fe9e01] dark:hover:text-[#43217a] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)] dark:drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
                 <span className="text-sm font-sans">joyce@synergysrestaurantgroup.com</span>
               </a>
               <a
                 href="tel:+14152994019"
                 className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors magnetic dark:hover:text-yellow-400 font-sans"
               >
-                <Phone className="w-5 h-5 text-[#43217a] dark:text-[#fe9e01] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)] dark:drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
+                <Phone className="w-5 h-5 text-[#43217a] dark:text-[#fe9e01] hover:text-[#fe9e01] dark:hover:text-[#43217a] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)] dark:drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
                 <span className="text-sm font-sans">+1 (415) 299-4019</span>
               </a>
             </div>
@@ -115,7 +115,7 @@ export function Footer() {
                            dark:border-yellow-400/30"
                   aria-label={social.label}
                 >
-                  <social.icon className="w-5 h-5 text-[#43217a] dark:text-[#fe9e01] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)] dark:drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
+                  <social.icon className="w-5 h-5 text-[#43217a] dark:text-[#fe9e01] hover:text-[#fe9e01] dark:hover:text-[#43217a] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)] dark:drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
                 </motion.a>
               ))}
             </div>

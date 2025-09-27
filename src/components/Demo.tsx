@@ -117,7 +117,7 @@ export function Demo() {
                     transition={{ delay: index * 0.1, duration: 0.6 }}
                     className="relative"
                   >
-                    <field.icon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-muted-foreground text-[#43217a] dark:text-[#fe9e01] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)] dark:drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
+                    <field.icon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-muted-foreground text-[#43217a] dark:text-[#fe9e01] hover:text-[#fe9e01] dark:hover:text-[#43217a] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)] dark:drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
                     <Input
                       type={field.type}
                       name={field.name}
@@ -136,7 +136,7 @@ export function Demo() {
                   transition={{ delay: 0.4, duration: 0.6 }}
                   className="relative"
                 >
-                  <MessageSquare className="absolute left-3 top-4 w-5 h-5 text-muted-foreground text-[#43217a] dark:text-[#fe9e01] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)] dark:drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
+                  <MessageSquare className="absolute left-3 top-4 w-5 h-5 text-muted-foreground text-[#43217a] dark:text-[#fe9e01] hover:text-[#fe9e01] dark:hover:text-[#43217a] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)] dark:drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
                   <Textarea
                     name="message"
                     placeholder="Tell us about your restaurant and specific needs..."
