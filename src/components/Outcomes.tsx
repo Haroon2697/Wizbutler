@@ -9,7 +9,7 @@ export function Outcomes() {
   ];
 
   return (
-    <section className="relative overflow-hidden py-20 bg-[#43217a] dark:bg-background">
+    <section className="relative overflow-hidden py-20 bg-background">
       {/* Subtle background orbs */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-24 left-[10%] h-[320px] w-[320px] rounded-full bg-primary/15 blur-3xl" />
@@ -24,10 +24,10 @@ export function Outcomes() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white dark:text-[#fe9e01] font-sans">
+           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black dark:text-[#fe9e01] font-sans">
             Proven Results That Speak Volumes
           </h2>
-          <p className="text-lg text-white/80 dark:text-muted-foreground max-w-2xl mx-auto font-sans">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-sans">
             Join hundreds of venues already transforming their space management with WizButler
           </p>
         </motion.div>
@@ -47,17 +47,17 @@ export function Outcomes() {
 
               {/* Icon */}
               <div className="flex justify-center mb-6">
-                <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-[#fe9e01] dark:bg-[#43217a] text-white shadow-[0_0_20px_rgba(254,158,1,0.4)] dark:shadow-[0_0_20px_rgba(67,33,122,0.4)]">
+                <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-[#43217a] text-white shadow-[0_0_20px_rgba(67,33,122,0.4)]">
                   <stat.icon className="h-8 w-8 text-white" />
                 </div>
               </div>
 
               {/* Metric */}
-              <div className="mb-2 text-4xl md:text-5xl font-bold text-white dark:text-[#43217a]">
+              <div className="mb-2 text-4xl md:text-5xl font-bold text-[#43217a]">
                 {stat.value}
               </div>
-              <h3 className="text-xl font-semibold text-white dark:text-foreground mb-1 font-sans">{stat.label}</h3>
-              <p className="text-white/80 dark:text-muted-foreground text-sm font-sans">{stat.suffix}</p>
+              <h3 className="text-xl font-semibold text-foreground mb-1 font-sans">{stat.label}</h3>
+              <p className="text-muted-foreground text-sm font-sans">{stat.suffix}</p>
             </motion.div>
           ))}
         </div>
@@ -69,7 +69,7 @@ export function Outcomes() {
           transition={{ delay: 0.4, duration: 0.6 }}
           className="text-center mt-16"
         >
-              <p className="text-lg text-white/80 dark:text-muted-foreground mb-6 font-sans">Ready to see these results for your venue?</p>
+              <p className="text-lg text-muted-foreground mb-6 font-sans">Ready to see these results for your venue?</p>
           <motion.button whileHover={{ scale: 1.05 }} className="btn-neon px-8 py-4 text-lg bg-[#43217a] dark:bg-[#fe9e01] text-white shadow-[0_0_20px_rgba(67,33,122,0.3)] dark:shadow-[0_0_20px_rgba(254,158,1,0.3)] hover:bg-[#fe9e01] dark:hover:bg-[#43217a] hover:shadow-[0_0_30px_rgba(254,158,1,0.5)] dark:hover:shadow-[0_0_30px_rgba(67,33,122,0.5)] font-sans">
             Start Your Transformation
           </motion.button>
