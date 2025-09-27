@@ -74,11 +74,11 @@ export function Demo() {
   ];
 
   return (
-    <section id="demo" className="py-24 bg-gradient-to-br from-cyber-purple/5 via-background to-cyber-blue/5 relative overflow-hidden">
+    <section id="demo" className="py-24 bg-[#43217a]/5 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-cyber-grid opacity-20" />
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-radial from-neon-purple/20 to-transparent rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-radial from-cyber-blue/20 to-transparent rounded-full blur-3xl" />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#43217a]/20 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#fe9e01]/20 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center mb-16">
@@ -86,7 +86,7 @@ export function Demo() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-5xl font-bold mb-6 text-black dark:bg-gradient-to-r dark:from-yellow-400 dark:to-amber-500 dark:bg-clip-text dark:text-transparent font-sans"
+            className="text-4xl md:text-5xl font-bold mb-6 text-black dark:text-[#fe9e01] font-sans"
           >
             See WizButler in Action
           </motion.h2>
@@ -107,7 +107,7 @@ export function Demo() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <Card className="glass-card p-8 border-glass-border/50 border-blue-400/30 shadow-[0_0_15px_rgba(59,130,246,0.1)] hover:shadow-[0_0_20px_rgba(59,130,246,0.2)] dark:border-yellow-400/30 dark:shadow-[0_0_15px_rgba(251,191,36,0.1)] dark:hover:shadow-[0_0_20px_rgba(251,191,36,0.2)]">
+            <Card className="glass-card p-8 border-wizbutler-orange/30 shadow-[0_0_15px_rgba(254,158,1,0.1)] hover:shadow-[0_0_20px_rgba(254,158,1,0.2)]">
               <form onSubmit={handleSubmit} className="space-y-6">
                 {inputFields.map((field, index) => (
                   <motion.div
@@ -117,7 +117,7 @@ export function Demo() {
                     transition={{ delay: index * 0.1, duration: 0.6 }}
                     className="relative"
                   >
-                    <field.icon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-muted-foreground dark:text-yellow-400 dark:drop-shadow-[0_0_6px_rgba(251,191,36,0.5)]" />
+                    <field.icon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-muted-foreground text-[#43217a] dark:text-[#fe9e01] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)] dark:drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
                     <Input
                       type={field.type}
                       name={field.name}
@@ -125,7 +125,7 @@ export function Demo() {
                       value={formData[field.name as keyof typeof formData]}
                       onChange={handleChange}
                       required
-                      className="pl-12 glass-card border-glass-border/50 border-blue-400/30 focus:border-primary/50 focus:ring-2 focus:ring-primary/20 hover:border-blue-400/50 hover:shadow-[0_0_8px_rgba(59,130,246,0.3)] dark:focus:border-yellow-400 dark:focus:ring-yellow-400/20 dark:hover:border-yellow-400/50 dark:hover:shadow-[0_0_8px_rgba(251,191,36,0.3)] transition-all duration-300"
+                      className="pl-12 glass-card border-[#fe9e01]/30 focus:border-[#fe9e01]/50 focus:ring-2 focus:ring-[#fe9e01]/20 hover:border-[#fe9e01]/50 hover:shadow-[0_0_8px_rgba(254,158,1,0.3)] transition-all duration-300"
                     />
                   </motion.div>
                 ))}
@@ -136,14 +136,14 @@ export function Demo() {
                   transition={{ delay: 0.4, duration: 0.6 }}
                   className="relative"
                 >
-                  <MessageSquare className="absolute left-3 top-4 w-5 h-5 text-muted-foreground dark:text-yellow-400 dark:drop-shadow-[0_0_6px_rgba(251,191,36,0.5)]" />
+                  <MessageSquare className="absolute left-3 top-4 w-5 h-5 text-muted-foreground text-[#43217a] dark:text-[#fe9e01] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)] dark:drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
                   <Textarea
                     name="message"
                     placeholder="Tell us about your restaurant and specific needs..."
                     value={formData.message}
                     onChange={handleChange}
                     rows={4}
-                    className="pl-12 glass-card border-glass-border/50 border-blue-400/30 focus:border-primary/50 focus:ring-2 focus:ring-primary/20 hover:border-blue-400/50 hover:shadow-[0_0_8px_rgba(59,130,246,0.3)] dark:focus:border-yellow-400 dark:focus:ring-yellow-400/20 dark:hover:border-yellow-400/50 dark:hover:shadow-[0_0_8px_rgba(251,191,36,0.3)] transition-all duration-300 resize-none"
+                    className="pl-12 glass-card border-[#fe9e01]/30 focus:border-[#fe9e01]/50 focus:ring-2 focus:ring-[#fe9e01]/20 hover:border-[#fe9e01]/50 hover:shadow-[0_0_8px_rgba(254,158,1,0.3)] transition-all duration-300 resize-none"
                   />
                 </motion.div>
 
@@ -155,7 +155,7 @@ export function Demo() {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full btn-neon text-lg py-4 dark:bg-gradient-to-r dark:from-yellow-400 dark:to-amber-500 dark:text-white dark:shadow-[0_0_25px_rgba(251,191,36,0.4)] dark:hover:shadow-[0_0_35px_rgba(251,191,36,0.6)]"
+                    className="w-full btn-neon text-lg py-4 bg-[#43217a] dark:bg-[#fe9e01] text-white shadow-[0_0_25px_rgba(67,33,122,0.4)] dark:shadow-[0_0_25px_rgba(254,158,1,0.4)] hover:bg-[#fe9e01] dark:hover:bg-[#43217a] hover:shadow-[0_0_35px_rgba(254,158,1,0.6)] dark:hover:shadow-[0_0_35px_rgba(67,33,122,0.6)]"
                   >
                     {isSubmitting ? (
                       <motion.div
@@ -164,7 +164,7 @@ export function Demo() {
                         className="w-5 h-5 border-2 border-white border-t-transparent rounded-full mr-2"
                       />
                     ) : (
-                      <Send className="w-5 h-5 mr-2 dark:text-yellow-400 dark:drop-shadow-[0_0_6px_rgba(251,191,36,0.5)]" />
+                      <Send className="w-5 h-5 mr-2 text-white drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
                     )}
                     {isSubmitting ? "Sending..." : "Book Demo"}
                   </Button>
@@ -181,7 +181,7 @@ export function Demo() {
             className="space-y-8"
           >
             <div className="glass-card p-6 border-blue-400/20 shadow-[0_0_10px_rgba(59,130,246,0.1)] hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] dark:shadow-[0_0_10px_rgba(251,191,36,0.1)] dark:hover:shadow-[0_0_15px_rgba(251,191,36,0.2)]">
-              <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-cyber-purple to-cyber-blue bg-clip-text text-transparent dark:from-yellow-400 dark:to-amber-500 font-sans">What You'll See</h3>
+              <h3 className="text-2xl font-bold mb-4 text-[#43217a] font-sans">What You'll See</h3>
               <ul className="space-y-4">
                 {[
                   "Live space management demo",
@@ -197,7 +197,7 @@ export function Demo() {
                     transition={{ delay: index * 0.1, duration: 0.6 }}
                     className="flex items-center text-foreground font-sans"
                   >
-                    <div className="w-3 h-3 rounded-full bg-gradient-to-r from-cyber-purple to-cyber-blue mr-3 shadow-neon dark:bg-gradient-to-r dark:from-yellow-400 dark:to-amber-500 dark:shadow-[0_0_8px_rgba(251,191,36,0.5)]" />
+                    <div className="w-3 h-3 rounded-full bg-[#43217a] mr-3 shadow-[0_0_8px_rgba(67,33,122,0.5)]" />
                     {item}
                   </motion.li>
                 ))}
@@ -205,7 +205,7 @@ export function Demo() {
             </div>
 
             <div className="glass-card p-6 border-blue-400/20 shadow-[0_0_10px_rgba(59,130,246,0.1)] hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] dark:shadow-[0_0_10px_rgba(251,191,36,0.1)] dark:hover:shadow-[0_0_15px_rgba(251,191,36,0.2)]">
-              <h3 className="text-xl font-bold mb-3 bg-gradient-to-r from-cyber-purple to-cyber-blue bg-clip-text text-transparent dark:from-yellow-400 dark:to-amber-500 font-sans">Quick Facts</h3>
+              <h3 className="text-xl font-bold mb-3 text-[#43217a] font-sans">Quick Facts</h3>
               <div className="grid grid-cols-2 gap-4 text-sm font-sans">
                 <div>
                   <span className="font-semibold font-sans">Demo Duration:</span>

@@ -43,7 +43,7 @@ export function Features() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-black dark:bg-gradient-to-r dark:from-yellow-400 dark:to-amber-5 dark:bg-clip-text dark:text-transparent font-sans">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-black dark:text-[#fe9e01] font-sans">
             Powerful Features for Modern Venues
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-sans font-light">
@@ -62,11 +62,11 @@ export function Features() {
               whileHover={{ y: -10, scale: 1.02 }}
               className="glass-card p-8 magnetic group dark:shadow-[0_0_25px_rgba(251,191,36,0.2)] dark:hover:shadow-[0_0_35px_rgba(251,191,36,0.4)]"
             >
-              <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300 bg-gradient-to-r from-cyber-purple to-cyber-blue text-white dark:bg-gradient-to-r dark:from-yellow-400 dark:to-amber-500 dark:text-white dark:shadow-[0_0_20px_rgba(251,191,36,0.4)]`}>
-                <feature.icon className="w-8 h-8 dark:text-white" />
+              <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300 bg-[#43217a] text-white shadow-[0_0_20px_rgba(67,33,122,0.4)] group-hover:bg-[#fe9e01]`}>
+                <feature.icon className="w-8 h-8 text-white" />
               </div>
               
-              <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-cyber-purple to-cyber-blue bg-clip-text text-transparent dark:from-yellow-400 dark:to-amber-500 group-hover:from-blue-600 group-hover:to-blue-800 dark:group-hover:from-yellow-300 dark:group-hover:to-amber-400 transition-all duration-300 font-sans">
+              <h3 className="text-2xl font-bold mb-4 text-[#43217a] group-hover:text-[#8b5e2] transition-all duration-300 font-sans">
                 {feature.title}
               </h3>
               
@@ -90,7 +90,7 @@ export function Features() {
               whileHover={{ scale: 1.05 }}
               className="glass-card px-6 py-4 flex items-center space-x-3 border-blue-400/20 shadow-[0_0_8px_rgba(59,130,246,0.1)] hover:shadow-[0_0_12px_rgba(59,130,246,0.2)] dark:shadow-[0_0_15px_rgba(251,191,36,0.2)] dark:hover:shadow-[0_0_25px_rgba(251,191,36,0.4)]"
             >
-              <feature.icon className="w-5 h-5 text-primary dark:text-yellow-400 dark:drop-shadow-[0_0_6px_rgba(251,191,36,0.5)]" />
+              <feature.icon className="w-5 h-5 text-[#43217a] dark:text-[#fe9e01] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)] dark:drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
               <span className="font-medium text-foreground font-sans">{feature.text}</span>
             </motion.div>
           ))}

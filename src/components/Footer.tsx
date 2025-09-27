@@ -32,7 +32,7 @@ export function Footer() {
                 className="w-12 h-12 object-contain invert dark:invert-0"
               />
               <div>
-                <div className="text-xl font-bold text-black dark:bg-gradient-to-r dark:from-yellow-400 dark:to-amber-500 dark:bg-clip-text dark:text-transparent font-sans">
+                <div className="text-xl font-bold text-black dark:text-[#fe9e01] font-sans">
                   WizButler
                 </div>
                 <div className="text-sm text-muted-foreground font-sans">
@@ -53,20 +53,20 @@ export function Footer() {
             transition={{ delay: 0.1, duration: 0.8 }}
             className="space-y-6"
           >
-            <h3 className="text-lg font-bold bg-gradient-to-r from-cyber-purple to-cyber-blue bg-clip-text text-transparent dark:from-yellow-400 dark:to-amber-500 font-sans">Contact</h3>
+            <h3 className="text-lg font-bold text-[#43217a] font-sans">Contact</h3>
             <div className="space-y-4">
               <a
                 href="mailto:joyce@synergysrestaurantgroup.com"
                 className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors magnetic dark:hover:text-yellow-400 font-sans"
               >
-                <Mail className="w-5 h-5 dark:text-yellow-400 dark:drop-shadow-[0_0_6px_rgba(251,191,36,0.5)]" />
+                <Mail className="w-5 h-5 text-[#43217a] dark:text-[#fe9e01] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)] dark:drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
                 <span className="text-sm font-sans">joyce@synergysrestaurantgroup.com</span>
               </a>
               <a
                 href="tel:+14152994019"
                 className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors magnetic dark:hover:text-yellow-400 font-sans"
               >
-                <Phone className="w-5 h-5 dark:text-yellow-400 dark:drop-shadow-[0_0_6px_rgba(251,191,36,0.5)]" />
+                <Phone className="w-5 h-5 text-[#43217a] dark:text-[#fe9e01] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)] dark:drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
                 <span className="text-sm font-sans">+1 (415) 299-4019</span>
               </a>
             </div>
@@ -79,13 +79,13 @@ export function Footer() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="space-y-6"
           >
-            <h3 className="text-lg font-bold bg-gradient-to-r from-cyber-purple to-cyber-blue bg-clip-text text-transparent dark:from-yellow-400 dark:to-amber-500 font-sans">Quick Links</h3>
+            <h3 className="text-lg font-bold text-[#43217a] font-sans">Quick Links</h3>
             <div className="space-y-3">
               {["Features", "Demo", "Contact", "Privacy Policy", "Terms of Service"].map((link) => (
                 <a
                   key={link}
                   href={`#${link.toLowerCase().replace(" ", "-")}`}
-                  className="block text-muted-foreground hover:text-primary transition-colors magnetic text-sm dark:hover:text-yellow-400 font-sans"
+                  className="block text-muted-foreground hover:text-[#fe9e01] transition-colors magnetic text-sm font-sans"
                 >
                   {link}
                 </a>
@@ -100,7 +100,7 @@ export function Footer() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="space-y-6"
           >
-            <h3 className="text-lg font-bold bg-gradient-to-r from-cyber-purple to-cyber-blue bg-clip-text text-transparent dark:from-yellow-400 dark:to-amber-500 font-sans">Follow Us</h3>
+            <h3 className="text-lg font-bold text-[#43217a] font-sans">Follow Us</h3>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
                 <motion.a
@@ -115,14 +115,14 @@ export function Footer() {
                            dark:border-yellow-400/30"
                   aria-label={social.label}
                 >
-                  <social.icon className="w-5 h-5 dark:text-yellow-400 dark:drop-shadow-[0_0_6px_rgba(251,191,36,0.5)]" />
+                  <social.icon className="w-5 h-5 text-[#43217a] dark:text-[#fe9e01] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)] dark:drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
                 </motion.a>
               ))}
             </div>
             <p className="text-xs text-muted-foreground font-sans">
               Stay updated with the latest WizButler news and venue management insights.
             </p>
-            <a href={newsletterUrl} className="inline-block mt-2 text-sm underline hover:text-primary dark:hover:text-yellow-400 font-sans">
+            <a href={newsletterUrl} className="inline-block mt-2 text-sm underline hover:text-[#fe9e01] font-sans">
               Subscribe to our newsletter
             </a>
           </motion.div>

@@ -50,7 +50,7 @@ export function Navbar() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="magnetic text-foreground/80 hover:text-primary transition-colors duration-300 font-medium dark:hover:text-yellow-400 font-sans"
+                className="magnetic text-foreground/80 hover:text-[#fe9e01] transition-colors duration-300 font-medium font-sans"
               >
                 {link}
               </motion.a>
@@ -60,15 +60,15 @@ export function Navbar() {
           {/* CTA & Theme Toggle */
           }
           <div className="flex items-center space-x-4">
-            <a href="tel:+14152994019" aria-label="Call us" className="flex w-10 h-10 rounded-lg border border-gray-200 dark:border-gray-800 items-center justify-center hover:bg-accent/10 dark:hover:shadow-[0_0_20px_rgba(251,191,36,0.5)] dark:hover:border-yellow-400">
-              <Phone className="w-5 h-5 dark:drop-shadow-[0_0_8px_rgba(251,191,36,0.6)]" />
+            <a href="tel:+14152994019" aria-label="Call us" className="flex w-10 h-10 rounded-lg border border-gray-200 dark:border-gray-800 items-center justify-center hover:bg-accent/10 hover:shadow-[0_0_20px_rgba(254,158,1,0.5)] hover:border-[#fe9e01]">
+              <Phone className="w-5 h-5 drop-shadow-[0_0_8px_rgba(254,158,1,0.6)]" />
             </a>
             <ThemeToggle />
             <a
               href={import.meta.env.NEXT_PUBLIC_NEWSLETTER_URL || "https://www.linkedin.com/newsletters/restaurant-rescues-7344923332078669824"}
               className="flex"
             >
-              <Button className="btn-neon dark:bg-gradient-to-r dark:from-yellow-400 dark:to-amber-500 dark:text-white dark:shadow-[0_0_20px_rgba(251,191,36,0.4)] dark:hover:shadow-[0_0_30px_rgba(251,191,36,0.6)]">Subscribe</Button>
+              <Button className="btn-neon bg-[#43217a] dark:bg-[#fe9e01] text-white shadow-[0_0_20px_rgba(67,33,122,0.4)] dark:shadow-[0_0_20px_rgba(254,158,1,0.4)] hover:bg-[#fe9e01] dark:hover:bg-[#43217a] hover:shadow-[0_0_30px_rgba(254,158,1,0.6)] dark:hover:shadow-[0_0_30px_rgba(67,33,122,0.6)]">Subscribe</Button>
             </a>
           </div>
         </div>
@@ -81,7 +81,7 @@ export function Navbar() {
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
-          className="h-px bg-gradient-to-r from-cyber-purple via-cyber-blue to-cyber-purple dark:from-yellow-400 dark:via-amber-500 dark:to-yellow-400"
+          className="h-px bg-[#43217a]"
           style={{ transformOrigin: "left" }}
         />
         
@@ -90,7 +90,7 @@ export function Navbar() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="absolute top-0 left-0 h-px w-16 bg-gradient-to-r from-background via-background/80 to-transparent"
+          className="absolute top-0 left-0 h-px w-16 bg-background"
         />
         
         {/* Right Fade Overlay */}
@@ -98,7 +98,7 @@ export function Navbar() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="absolute top-0 right-0 h-px w-16 bg-gradient-to-l from-background via-background/80 to-transparent"
+          className="absolute top-0 right-0 h-px w-16 bg-background"
         />
         
         {/* Glow Effect */}
@@ -106,7 +106,7 @@ export function Navbar() {
           initial={{ scaleX: 0, opacity: 0 }}
           animate={{ scaleX: 1, opacity: 0.6 }}
           transition={{ duration: 1.2, delay: 0.8, ease: "easeOut" }}
-          className="absolute top-0 left-0 h-px w-full bg-gradient-to-r from-cyber-purple/30 via-cyber-blue/50 to-cyber-purple/30 dark:from-yellow-400/30 dark:via-amber-500/50 dark:to-yellow-400/30 blur-sm"
+          className="absolute top-0 left-0 h-px w-full bg-[#fe9e01]/50 blur-sm"
           style={{ transformOrigin: "left" }}
         />
       </div>

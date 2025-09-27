@@ -53,13 +53,16 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Clara AI custom colors
+        // WizButler custom colors
         "neon-purple": "hsl(var(--neon-purple))",
         "neon-blue": "hsl(var(--neon-blue))",
         "cyber-purple": "hsl(var(--cyber-purple))",
         "cyber-blue": "hsl(var(--cyber-blue))",
         "glass-bg": "hsl(var(--glass-bg))",
         "glass-border": "hsl(var(--glass-border))",
+        "wizbutler-green": "#8b5e2", // Custom green color
+        "wizbutler-orange": "#fe9e01", // Custom orange color
+        "wizbutler-purple": "#43217a", // Custom purple color
       },
       borderRadius: {
         lg: "var(--radius)",

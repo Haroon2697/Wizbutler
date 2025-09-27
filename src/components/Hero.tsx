@@ -14,13 +14,13 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cyber-grid">
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-cyber-purple/10 via-transparent to-cyber-blue/10" />
+      <div className="absolute inset-0 bg-[#43217a]/10" />
       
       {/* Floating Particles */}
       {particles.map((particle) => (
         <motion.div
           key={particle.id}
-          className="particle bg-gradient-to-r from-neon-purple to-neon-blue"
+          className="particle bg-[#43217a]"
           style={{
             width: particle.size,
             height: particle.size,
@@ -58,7 +58,7 @@ export function Hero() {
             <Badge
               key={text}
               variant="secondary"
-              className="glass-card px-4 py-2 text-sm border-spacing-2 border-glass-border border-blue-400/30 font-medium hover:shadow-neon hover:border-primary/50 text-foreground hover:text-foreground dark:hover:border-yellow-400/50 dark:hover:shadow-[0_0_15px_rgba(251,191,36,0.4)] dark:hover:text-yellow-400 font-sans"
+              className="glass-card px-4 py-2 text-sm border-spacing-2 border-[#fe9e01]/30 font-medium hover:shadow-neon hover:border-[#fe9e01]/50 text-foreground hover:text-foreground font-sans"
             >
               {text}
             </Badge>
@@ -73,9 +73,9 @@ export function Hero() {
           className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight font-sans"
         >
           The Dynamic{" "}
-          <span className="bg-gradient-to-r from-cyber-purple to-cyber-blue dark:from-yellow-400 dark:via-yellow-500 dark:to-amber-500 bg-clip-text text-transparent font-bold">All-in-One</span>{" "}
+          <span className="text-[#43217a] font-bold">All-in-One</span>{" "}
           AI Platform for{" "}
-          <span className="bg-gradient-to-r from-cyber-purple to-cyber-blue dark:from-yellow-400 dark:via-yellow-500 dark:to-amber-500 bg-clip-text text-transparent font-bold">Space Management</span>
+          <span className="text-[#fe9e01] font-bold">Space Management</span>
         </motion.h1>
 
         {/* Subheadline */}
@@ -96,16 +96,10 @@ export function Hero() {
           transition={{ delay: 0.8 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-6"
         >
-          <Button size="lg" className="btn-neon text-lg px-8 py-4 dark:bg-gradient-to-r dark:from-yellow-400 dark:to-amber-500 dark:text-white dark:shadow-[0_0_25px_rgba(251,191,36,0.4)] dark:hover:shadow-[0_0_35px_rgba(251,191,36,0.6)] font-sans">
-            Let's Chat
+          <Button size="lg" className="btn-neon text-lg px-8 py-4 bg-[#43217a] dark:bg-[#fe9e01] text-white shadow-[0_0_25px_rgba(67,33,122,0.4)] dark:shadow-[0_0_25px_rgba(254,158,1,0.4)] hover:bg-[#fe9e01] dark:hover:bg-[#43217a] hover:shadow-[0_0_35px_rgba(254,158,1,0.6)] dark:hover:shadow-[0_0_35px_rgba(67,33,122,0.6)] font-sans">
+            Demo
           </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="glass-card text-lg px-8 py-4 hover:bg-accent/10 hover:border-accent/40 text-foreground hover:text-foreground hover:border-blue-400/50 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] dark:shadow-[0_0_20px_rgba(251,191,36,0.3)] dark:hover:shadow-[0_0_30px_rgba(251,191,36,0.5)] dark:hover:border-yellow-400 dark:hover:bg-yellow-400/10 font-sans"
-          >
-            See How It Works
-          </Button>
+         
         </motion.div>
 
         {/* Floating geometric shapes */}
@@ -123,7 +117,7 @@ export function Hero() {
           }}
         />
         <motion.div
-          className="absolute top-3/4 right-1/4 w-24 h-24 bg-gradient-to-r from-cyber-blue/20 to-neon-purple/20 dark:from-yellow-400/20 dark:to-amber-500/20 rounded-full"
+          className="absolute top-3/4 right-1/4 w-24 h-24 bg-[#43217a]/20 dark:bg-[#fe9e01]/20 rounded-full"
           animate={{
             y: [0, -30, 0],
             x: [0, 20, 0],

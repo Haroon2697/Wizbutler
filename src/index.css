@@ -16,8 +16,8 @@
     --popover: 240 8% 98%;
     --popover-foreground: 240 10% 4%;
     
-    /* Primary deep blue */
-    --primary: 223 76% 30%; /* #123385 */
+    /* WizButler Primary - Deep Purple */
+    --primary: 260 50% 25%; /* #43217a */
     --primary-foreground: 240 8% 98%;
     
     --secondary: 240 5% 84%;
@@ -26,30 +26,30 @@
     --muted: 240 5% 84%;
     --muted-foreground: 240 4% 46%;
     
-    /* Accent yellow/orange */
-    --accent: 45 79% 51%; /* #e5b31e */
+    /* WizButler Accent - Orange */
+    --accent: 35 98% 50%; /* #fe9e01 */
     --accent-foreground: 240 8% 98%;
     /* Extra shades for utilities */
-    --accent-light: 48 87% 60%; /* #f2c744 */
-    --accent-dark: 45 92% 45%; /* #d8a00d */
-    --yellow: 47 79% 51%; /* #e2b51a */
-    --yellow-light: 47 84% 59%; /* #efc73f */
-    --yellow-dark: 47 88% 33%; /* #c59a0f */
+    --accent-light: 35 98% 60%; /* #ffb133 */
+    --accent-dark: 35 98% 40%; /* #cc7e01 */
+    --yellow: 35 98% 50%; /* #fe9e01 */
+    --yellow-light: 35 98% 60%; /* #ffb133 */
+    --yellow-dark: 35 98% 40%; /* #cc7e01 */
     
     --destructive: 0 84% 60%;
     --destructive-foreground: 240 8% 98%;
     
     --border: 240 6% 90%;
     --input: 240 6% 90%;
-    --ring: 223 76% 30%;
+    --ring: 260 50% 25%;
     
     --radius: 0.75rem;
     
-    /* Custom Clara AI colors */
-    --neon-purple: 271 91% 65%;
-    --neon-blue: 195 100% 50%;
-    --cyber-purple: 259 94% 51%;
-    --cyber-blue: 214 100% 60%;
+    /* WizButler Custom colors */
+    --neon-purple: 260 50% 35%; /* Darker purple */
+    --neon-blue: 35 98% 50%; /* Orange accent */
+    --cyber-purple: 260 50% 25%; /* Primary purple */
+    --cyber-blue: 35 98% 50%; /* Orange accent */
     --glass-bg: 240 8% 98%;
     --glass-border: 240 6% 90%;
     
@@ -78,8 +78,8 @@
     --popover: 240 8% 6%;
     --popover-foreground: 240 8% 98%;
     
-    /* Dark mode: slightly lighter blue */
-    --primary: 223 60% 41%;
+    /* Dark mode: WizButler colors */
+    --primary: 260 50% 35%; /* Slightly lighter purple */
     --primary-foreground: 240 10% 4%;
     
     --secondary: 240 4% 16%;
@@ -88,7 +88,7 @@
     --muted: 240 4% 16%;
     --muted-foreground: 240 5% 65%;
     
-    --accent: 45 79% 51%;
+    --accent: 35 98% 50%; /* Orange accent */
     --accent-foreground: 240 10% 4%;
     
     --destructive: 0 84% 60%;
@@ -96,7 +96,7 @@
     
     --border: 240 4% 16%;
     --input: 240 4% 16%;
-    --ring: 223 60% 41%;
+    --ring: 260 50% 35%;
     
     /* Custom dark theme colors */
     --glass-bg: 240 8% 6%;
@@ -146,7 +146,7 @@
   
   /* Solid CTA button: blue in light, yellow in dark */
   .btn-neon {
-    @apply relative px-8 py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-cyber-purple to-cyber-blue
+    @apply relative px-8 py-4 rounded-xl font-semibold text-white
            shadow-[0_6px_24px_rgba(59,130,246,0.35)] hover:shadow-[0_10px_36px_rgba(59,130,246,0.45)]
            transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1;
   }
