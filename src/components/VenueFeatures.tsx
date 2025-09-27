@@ -49,7 +49,7 @@ export function VenueFeatures() {
   ];
 
   return (
-    <section className="py-24 bg-background relative overflow-hidden">
+    <section className="py-24 bg-[#43217a] dark:bg-background relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-cyber-grid opacity-20" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-radial from-cyber-purple/10 to-transparent rounded-full blur-3xl" />
@@ -63,10 +63,10 @@ export function VenueFeatures() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-black dark:text-[#fe9e01] font-sans">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white dark:text-[#fe9e01] font-sans">
             Tailored for Every Venue Type
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-sans font-light">
+          <p className="text-xl text-white/80 dark:text-muted-foreground max-w-2xl mx-auto font-sans font-light">
             WizButler adapts to your specific venue needs with specialized features and workflows
           </p>
         </motion.div>
@@ -82,11 +82,11 @@ export function VenueFeatures() {
               whileHover={{ y: -10, scale: 1.02 }}
               className="glass-card p-6 magnetic group dark:shadow-[0_0_25px_rgba(251,191,36,0.2)] dark:hover:shadow-[0_0_35px_rgba(251,191,36,0.4)]"
             >
-              <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300 bg-[#43217a] text-white shadow-[0_0_20px_rgba(67,33,122,0.4)] group-hover:bg-[#fe9e01]`}>
+              <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300 bg-[#fe9e01] dark:bg-[#43217a] text-white shadow-[0_0_20px_rgba(254,158,1,0.4)] dark:shadow-[0_0_20px_rgba(67,33,122,0.4)] group-hover:bg-[#43217a] dark:group-hover:bg-[#fe9e01]`}>
                 <venue.icon className="w-8 h-8 text-white" />
               </div>
               
-              <h3 className="text-xl font-bold mb-4 text-[#43217a] group-hover:text-[#8b5e2] transition-all duration-300 font-sans">
+              <h3 className="text-xl font-bold mb-4 text-white dark:text-[#43217a] group-hover:text-[#fe9e01] dark:group-hover:text-[#8b5e2] transition-all duration-300 font-sans">
                 {venue.title}
               </h3>
               
@@ -97,9 +97,9 @@ export function VenueFeatures() {
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.2 + featureIndex * 0.1 + 0.5 }}
-                    className="flex items-start text-sm text-muted-foreground font-sans"
+                    className="flex items-start text-sm text-white/80 dark:text-muted-foreground font-sans"
                   >
-                    <div className="w-2 h-2 rounded-full bg-[#43217a] mr-3 mt-2 flex-shrink-0" />
+                    <div className="w-2 h-2 rounded-full bg-white dark:bg-[#43217a] mr-3 mt-2 flex-shrink-0" />
                     <span>{feature}</span>
                   </motion.li>
                 ))}
@@ -115,7 +115,7 @@ export function VenueFeatures() {
           transition={{ delay: 0.6, duration: 0.8 }}
           className="text-center mt-16"
         >
-          <p className="text-lg text-muted-foreground mb-6 font-sans">
+          <p className="text-lg text-white/80 dark:text-muted-foreground mb-6 font-sans">
             Ready to see how WizButler can transform your specific venue type?
           </p>
           <motion.button 

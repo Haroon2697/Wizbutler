@@ -8,7 +8,6 @@ import { HowItWorks } from "@/components/HowItWorks";
 import { Demo } from "@/components/Demo";
 import { Footer } from "@/components/Footer";
 import { MagneticCursor } from "@/components/ui/magnetic-cursor";
-import { AboutJoyce } from "@/components/AboutJoyce";
 
 const Index = () => {
   return (
@@ -21,7 +20,6 @@ const Index = () => {
       <Testimonials />
       <Outcomes />
       <HowItWorks />
-      <AboutJoyce />
       <Demo />
       <Footer />
     </div>
