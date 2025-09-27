@@ -5,8 +5,8 @@ import { VenueFeatures } from "@/components/VenueFeatures";
 import { Testimonials } from "@/components/Testimonials";
 import { Outcomes } from "@/components/Outcomes";
 import { HowItWorks } from "@/components/HowItWorks";
-import { Demo } from "@/components/Demo";
 import { Footer } from "@/components/Footer";
+import { PatentSection } from "@/components/PatentSection";
 import { MagneticCursor } from "@/components/ui/magnetic-cursor";
 
 const Index = () => {
@@ -17,10 +17,10 @@ const Index = () => {
       <Hero />
       <Features />
       <VenueFeatures />
-      <Testimonials />
       <Outcomes />
       <HowItWorks />
-      <Demo />
+      <Testimonials />
+      <PatentSection />
       <Footer />
     </div>
   );
