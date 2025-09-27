@@ -27,7 +27,7 @@ export function HowItWorks() {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-br from-[#43217a] via-[#43217a]/90 to-[#fe9e01]/40 relative overflow-hidden">
+    <section id="how-it-works" className="py-24 bg-gradient-to-br from-[#43217a] via-[#43217a]/90 to-[#fe9e01]/40 relative overflow-hidden">
 
       {/* Background Elements */}
       <div className="absolute inset-0 bg-cyber-grid opacity-20" />

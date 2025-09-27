@@ -10,7 +10,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-gradient-to-br from-[#43217a] via-[#43217a]/90 to-[#fe9e01]/40 backdrop-blur-xl border-t border-glass-border/30 py-16 relative overflow-hidden">
+    <footer id="contact" className="bg-gradient-to-br from-[#43217a] via-[#43217a]/90 to-[#fe9e01]/40 backdrop-blur-xl border-t border-glass-border/30 py-16 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-cyber-grid opacity-10" />
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-gradient-radial from-cyber-purple/10 to-transparent rounded-full blur-3xl" />

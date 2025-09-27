@@ -42,16 +42,30 @@ export function Navbar() {
 
           {/* Navigation Links */}
           <div className="flex items-center space-x-6">
-            {["Features", "Contact"].map((link, index) => (
+            {[
+              { name: "Features", href: "#features" },
+              { name: "How It Works", href: "#how-it-works" },
+              { name: "Testimonials", href: "#testimonials" },
+              { name: "Contact", href: "#contact" }
+            ].map((link, index) => (
               <motion.a
-                key={link}
-                href={`#${link.toLowerCase()}`}
+                key={link.name}
+                href={link.href}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="magnetic text-white/80 hover:text-[#fe9e01] transition-colors duration-300 font-medium font-sans"
+                className={`magnetic hover:text-[#fe9e01] transition-colors duration-300 font-medium font-sans ${
+                  scrolled ? "text-white/80" : "text-black/80"
+                }`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  const element = document.querySelector(link.href);
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
               >
-                {link}
+                {link.name}
               </motion.a>
             ))}
           </div>
@@ -59,8 +73,12 @@ export function Navbar() {
           {/* CTA & Theme Toggle */
           }
           <div className="flex items-center space-x-4">
-            <a href="tel:+14152994019" aria-label="Call us" className="flex w-10 h-10 rounded-lg border border-white/30 items-center justify-center hover:bg-white/10 hover:shadow-[0_0_20px_rgba(254,158,1,0.5)] hover:border-[#fe9e01]">
-              <Phone className="w-5 h-5 text-white drop-shadow-[0_0_8px_rgba(254,158,1,0.6)]" />
+            <a href="tel:+14152994019" aria-label="Call us" className={`flex w-10 h-10 rounded-lg border items-center justify-center hover:bg-white/10 hover:shadow-[0_0_20px_rgba(254,158,1,0.5)] hover:border-[#fe9e01] ${
+              scrolled ? "border-white/30" : "border-black/30"
+            }`}>
+              <Phone className={`w-5 h-5 drop-shadow-[0_0_8px_rgba(254,158,1,0.6)] ${
+                scrolled ? "text-white" : "text-black"
+              }`} />
             </a>
             <a
               href={import.meta.env.NEXT_PUBLIC_NEWSLETTER_URL || "https://www.linkedin.com/newsletters/restaurant-rescues-7344923332078669824"}

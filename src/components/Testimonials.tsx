@@ -18,7 +18,7 @@ export function Testimonials() {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-[#43217a] via-[#43217a]/90 to-[#fe9e01]/90 relative overflow-hidden">
+    <section id="testimonials" className="py-16 bg-gradient-to-br from-[#43217a] via-[#43217a]/90 to-[#fe9e01]/90 relative overflow-hidden">
       {/* Contrast Line */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#fe9e01]/60 to-transparent" />
       
