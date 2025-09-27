@@ -70,7 +70,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight font-sans text-black"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 leading-tight font-sans text-black px-4"
         >
           The Dynamic{" "}
           <span className="text-[#43217a] font-bold">All-in-One</span>{" "}
@@ -83,7 +83,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-              className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto font-sans font-light"
+              className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-8 sm:mb-12 max-w-3xl mx-auto font-sans font-light px-4"
         >
           Automate space management, optimize layouts, and boost revenue — with{" "}
           <span className="text-primary font-semibold font-sans">seamless integration</span>
@@ -94,9 +94,9 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-6"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 px-4"
         >
-          <Button size="lg" className="btn-neon text-lg px-8 py-4 bg-[#43217a] text-white shadow-[0_0_25px_rgba(67,33,122,0.4)] hover:bg-[#fe9e01] hover:shadow-[0_0_35px_rgba(254,158,1,0.6)] font-sans">
+          <Button size="lg" className="btn-neon text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 bg-[#43217a] text-white shadow-[0_0_25px_rgba(67,33,122,0.4)] hover:bg-[#fe9e01] hover:shadow-[0_0_35px_rgba(254,158,1,0.6)] font-sans w-full sm:w-auto">
             Demo
           </Button>
          

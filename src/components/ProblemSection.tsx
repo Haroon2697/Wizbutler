@@ -48,7 +48,7 @@ export function ProblemSection() {
             <span className="text-[#fe9e01] font-semibold text-xs uppercase tracking-wider">Common Challenges</span>
             <div className="w-1.5 h-1.5 rounded-full bg-[#fe9e01]"></div>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-black font-sans mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black font-sans mb-4 px-4">
             Do you have these problems?
           </h2>
           <div className="w-16 h-0.5 bg-gradient-to-r from-[#fe9e01] to-[#43217a] rounded-full mx-auto"></div>
@@ -56,7 +56,7 @@ export function ProblemSection() {
 
         {/* Problem Statements */}
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12 px-4">
             {problems.map((problem, index) => (
               <motion.div
                 key={index}
@@ -98,16 +98,16 @@ export function ProblemSection() {
             <div className="w-12 h-12 rounded-full bg-[#fe9e01] flex items-center justify-center mx-auto mb-4 shadow-[0_0_20px_rgba(254,158,1,0.5)]">
               <span className="text-xl">💡</span>
             </div>
-            <h3 className="text-2xl md:text-3xl font-bold text-black mb-4 font-sans">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-black mb-4 font-sans">
               We understand your pain
             </h3>
-            <p className="text-gray-600 text-base leading-relaxed font-sans mb-6">
+            <p className="text-gray-600 text-sm sm:text-base leading-relaxed font-sans mb-6">
               We know your struggles because we've lived them. What does success look like for your venue? Let's chat and talk about how we can help you achieve it.
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-[#fe9e01] text-white px-6 py-3 rounded-xl font-semibold text-base shadow-[0_0_20px_rgba(254,158,1,0.4)] hover:shadow-[0_0_30px_rgba(254,158,1,0.6)] transition-all duration-300"
+              className="bg-[#fe9e01] text-white px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold text-sm sm:text-base shadow-[0_0_20px_rgba(254,158,1,0.4)] hover:shadow-[0_0_30px_rgba(254,158,1,0.6)] transition-all duration-300 w-full sm:w-auto"
             >
               Let's Talk Solutions
             </motion.button>

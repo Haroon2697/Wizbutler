@@ -35,16 +35,16 @@ export function Testimonials() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black font-sans">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-black font-sans px-4">
             What Our Clients Say
           </h2>
-          <p className="text-lg text-gray-600 max-w-xl mx-auto font-sans font-light">
+          <p className="text-base sm:text-lg text-gray-600 max-w-xl mx-auto font-sans font-light px-4">
             Real results from real venues using WizButler
           </p>
         </motion.div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto px-4">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
@@ -52,7 +52,7 @@ export function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2, duration: 0.8 }}
               whileHover={{ y: -5, scale: 1.02 }}
-              className="bg-white rounded-2xl p-6 border border-gray-200 hover:border-[#fe9e01] transition-all duration-500 h-full shadow-[0_0_20px_rgba(0,0,0,0.1)] hover:shadow-[0_0_30px_rgba(254,158,1,0.2)] magnetic group"
+              className="bg-white rounded-2xl p-4 sm:p-6 border border-gray-200 hover:border-[#fe9e01] transition-all duration-500 h-full shadow-[0_0_20px_rgba(0,0,0,0.1)] hover:shadow-[0_0_30px_rgba(254,158,1,0.2)] magnetic group"
             >
               {/* Quote Icon */}
               <div className="flex justify-center mb-4">
@@ -62,15 +62,15 @@ export function Testimonials() {
               </div>
 
               {/* Quote */}
-              <blockquote className="text-base text-gray-600 mb-4 leading-relaxed font-sans italic">
+              <blockquote className="text-sm sm:text-base text-gray-600 mb-4 leading-relaxed font-sans italic">
                 "{testimonial.quote}"
               </blockquote>
 
               {/* Author */}
               <div className="border-t border-gray-200 pt-4">
-                <div className="font-bold text-black text-base font-sans">{testimonial.author}</div>
-                <div className="text-sm text-gray-500 font-sans">{testimonial.role}</div>
-                <div className="text-[#fe9e01] font-semibold text-sm font-sans">{testimonial.company}</div>
+                <div className="font-bold text-black text-sm sm:text-base font-sans">{testimonial.author}</div>
+                <div className="text-xs sm:text-sm text-gray-500 font-sans">{testimonial.role}</div>
+                <div className="text-[#fe9e01] font-semibold text-xs sm:text-sm font-sans">{testimonial.company}</div>
               </div>
             </motion.div>
           ))}

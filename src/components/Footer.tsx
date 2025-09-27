@@ -17,7 +17,7 @@ export function Footer() {
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-radial from-cyber-blue/10 to-transparent rounded-full blur-3xl" />
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid md:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
           {/* Brand */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -40,7 +40,7 @@ export function Footer() {
                 </div>
               </div>
             </div>
-            <p className="text-white/80 leading-relaxed font-sans">
+            <p className="text-white/80 leading-relaxed font-sans text-sm sm:text-base">
               Revolutionizing venue operations with AI-powered space management. 
               Optimize layouts, boost revenue, scale efficiently.
             </p>
@@ -53,21 +53,21 @@ export function Footer() {
             transition={{ delay: 0.1, duration: 0.8 }}
             className="space-y-6"
           >
-            <h3 className="text-lg font-bold text-white font-sans">Contact</h3>
+            <h3 className="text-base sm:text-lg font-bold text-white font-sans">Contact</h3>
             <div className="space-y-4">
               <a
                 href="mailto:wizbutler@synergysrestaurantgroup.com"
                 className="flex items-center space-x-3 text-white/80 hover:text-white transition-colors magnetic font-sans"
               >
                 <Mail className="w-5 h-5 text-[#43217a] hover:text-[#fe9e01] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)]" />
-                <span className="text-sm font-sans">wizbutler@synergysrestaurantgroup.com</span>
+                <span className="text-xs sm:text-sm font-sans break-all">wizbutler@synergysrestaurantgroup.com</span>
               </a>
               <a
                 href="tel:+14152994019"
                 className="flex items-center space-x-3 text-white/80 hover:text-white transition-colors magnetic font-sans"
               >
                 <Phone className="w-5 h-5 text-[#43217a] hover:text-[#fe9e01] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)]" />
-                <span className="text-sm font-sans">+1 (415) 299-4019</span>
+                <span className="text-xs sm:text-sm font-sans">+1 (415) 299-4019</span>
               </a>
             </div>
           </motion.div>
@@ -79,13 +79,13 @@ export function Footer() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="space-y-6"
           >
-            <h3 className="text-lg font-bold text-white font-sans">Quick Links</h3>
+            <h3 className="text-base sm:text-lg font-bold text-white font-sans">Quick Links</h3>
             <div className="space-y-3">
               {["Features", "Demo", "Contact", "Privacy Policy", "Terms of Service"].map((link) => (
                 <a
                   key={link}
                   href={`#${link.toLowerCase().replace(" ", "-")}`}
-                  className="block text-white/80 hover:text-white transition-colors magnetic text-sm font-sans"
+                  className="block text-white/80 hover:text-white transition-colors magnetic text-xs sm:text-sm font-sans"
                 >
                   {link}
                 </a>
@@ -100,7 +100,7 @@ export function Footer() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="space-y-6"
           >
-            <h3 className="text-lg font-bold text-white font-sans">Follow Us</h3>
+            <h3 className="text-base sm:text-lg font-bold text-white font-sans">Follow Us</h3>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
                 <motion.a
@@ -119,7 +119,7 @@ export function Footer() {
             <p className="text-xs text-white/60 font-sans">
               Stay updated with the latest WizButler news and venue management insights.
             </p>
-            <a href={newsletterUrl} className="inline-block mt-2 text-sm underline text-white/80 hover:text-white font-sans">
+            <a href={newsletterUrl} className="inline-block mt-2 text-xs sm:text-sm underline text-white/80 hover:text-white font-sans">
               Subscribe to our newsletter
             </a>
           </motion.div>
@@ -132,10 +132,10 @@ export function Footer() {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="border-t border-glass-border/30 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
         >
-          <p className="text-sm text-white/80 font-sans">
+          <p className="text-xs sm:text-sm text-white/80 font-sans">
             © 2024 WizButler. All rights reserved.
           </p>
-          <p className="text-sm text-white/80 mt-4 md:mt-0 font-sans">
+          <p className="text-xs sm:text-sm text-white/80 mt-4 md:mt-0 font-sans">
             Powered by Synergy Restaurant Group
           </p>
         </motion.div>

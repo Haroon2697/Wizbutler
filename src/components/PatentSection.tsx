@@ -34,7 +34,7 @@ export function PatentSection() {
             >
               {/* Tagline */}
               <div className="space-y-4">
-                <h2 className="text-4xl md:text-5xl font-bold text-black font-sans">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black font-sans px-4">
                   Built by visionaries for visionaries
                 </h2>
                 <div className="w-24 h-1 bg-gradient-to-r from-[#43217a] to-[#fe9e01] rounded-full"></div>
@@ -45,17 +45,17 @@ export function PatentSection() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
-                className="bg-white p-8 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.1)] border border-gray-200"
+                className="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.1)] border border-gray-200 mx-4"
               >
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 rounded-full bg-[#43217a] flex items-center justify-center flex-shrink-0">
                     <Award className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <blockquote className="text-lg text-gray-600 italic font-sans leading-relaxed">
+                    <blockquote className="text-base sm:text-lg text-gray-600 italic font-sans leading-relaxed">
                       "Current invention gives greater benefits to the operators"
                     </blockquote>
-                    <p className="text-sm text-[#43217a] font-semibold mt-2 font-sans">
+                    <p className="text-xs sm:text-sm text-[#43217a] font-semibold mt-2 font-sans">
                       Australian Patent Office
                     </p>
                   </div>
@@ -69,23 +69,23 @@ export function PatentSection() {
                 transition={{ delay: 0.4, duration: 0.8 }}
                 className="space-y-4"
               >
-                <h3 className="text-xl font-bold text-black font-sans">
+                <h3 className="text-lg sm:text-xl font-bold text-black font-sans px-4">
                   Patents granted in USA, Canada, Singapore, Malaysia, India, other countries in pending
                 </h3>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3 px-4">
                   {patents.map((patent, index) => (
                     <motion.div
                       key={patent.country}
                       initial={{ opacity: 0, scale: 0.8 }}
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ delay: 0.5 + index * 0.1, duration: 0.5 }}
-                      className={`p-3 rounded-lg text-center font-sans ${
+                      className={`p-2 sm:p-3 rounded-lg text-center font-sans ${
                         patent.status === "Granted"
                           ? "bg-[#43217a] text-white"
                           : "bg-gray-100 text-gray-600"
                       }`}
                     >
-                      <div className="font-semibold text-sm">{patent.country}</div>
+                      <div className="font-semibold text-xs sm:text-sm">{patent.country}</div>
                       <div className="text-xs opacity-80">{patent.status}</div>
                     </motion.div>
                   ))}
@@ -101,16 +101,16 @@ export function PatentSection() {
               className="space-y-8"
             >
               <div className="text-center lg:text-left">
-                <h3 className="text-3xl md:text-4xl font-bold text-black mb-4 font-sans">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-4 font-sans px-4">
                   Ready to Transform Your Venue?
                 </h3>
-                <p className="text-lg text-gray-600 mb-8 font-sans">
+                <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 font-sans px-4">
                   Join the visionaries who are already revolutionizing their space management
                 </p>
               </div>
 
               {/* CTA Buttons */}
-              <div className="space-y-4">
+              <div className="space-y-4 px-4">
                 <motion.div
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
