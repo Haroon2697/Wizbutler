@@ -20,7 +20,7 @@ export function Navbar() {
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-background/80 backdrop-blur-xl border-b border-glass-border/30 shadow-lg"
+          ? "bg-gradient-to-r from-[#43217a]/90 via-[#43217a]/80 to-[#fe9e01]/40 backdrop-blur-xl border-b border-white/20 shadow-lg"
           : "bg-transparent"
       }`}
     >
@@ -49,7 +49,7 @@ export function Navbar() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="magnetic text-foreground/80 hover:text-[#fe9e01] transition-colors duration-300 font-medium font-sans"
+                className="magnetic text-white/80 hover:text-[#fe9e01] transition-colors duration-300 font-medium font-sans"
               >
                 {link}
               </motion.a>
@@ -59,8 +59,8 @@ export function Navbar() {
           {/* CTA & Theme Toggle */
           }
           <div className="flex items-center space-x-4">
-            <a href="tel:+14152994019" aria-label="Call us" className="flex w-10 h-10 rounded-lg border border-gray-200 items-center justify-center hover:bg-accent/10 hover:shadow-[0_0_20px_rgba(254,158,1,0.5)] hover:border-[#fe9e01]">
-              <Phone className="w-5 h-5 drop-shadow-[0_0_8px_rgba(254,158,1,0.6)]" />
+            <a href="tel:+14152994019" aria-label="Call us" className="flex w-10 h-10 rounded-lg border border-white/30 items-center justify-center hover:bg-white/10 hover:shadow-[0_0_20px_rgba(254,158,1,0.5)] hover:border-[#fe9e01]">
+              <Phone className="w-5 h-5 text-white drop-shadow-[0_0_8px_rgba(254,158,1,0.6)]" />
             </a>
             <a
               href={import.meta.env.NEXT_PUBLIC_NEWSLETTER_URL || "https://www.linkedin.com/newsletters/restaurant-rescues-7344923332078669824"}

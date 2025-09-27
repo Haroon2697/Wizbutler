@@ -18,7 +18,10 @@ export function Testimonials() {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-[#fe9e01] via-[#fe9e01]/90 to-[#43217a]/90 relative overflow-hidden">
+    <section className="py-16 bg-gradient-to-br from-[#43217a] via-[#43217a]/90 to-[#fe9e01]/90 relative overflow-hidden">
+      {/* Contrast Line */}
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#fe9e01]/60 to-transparent" />
+      
       {/* Background Elements */}
       <div className="absolute inset-0 bg-cyber-grid opacity-10" />
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-[#43217a]/10 to-[#fe9e01]/10 rounded-full blur-3xl" />
@@ -49,7 +52,7 @@ export function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2, duration: 0.8 }}
               whileHover={{ y: -5, scale: 1.02 }}
-              className="glass-card p-6 magnetic group"
+              className="bg-white/10 backdrop-blur-xl rounded-2xl p-6 border border-white/20 hover:bg-white/20 hover:border-[#fe9e01]/50 transition-all duration-500 h-full shadow-[0_0_20px_rgba(0,0,0,0.1)] hover:shadow-[0_0_30px_rgba(254,158,1,0.2)] magnetic group"
             >
               {/* Quote Icon */}
               <div className="flex justify-center mb-4">
@@ -59,14 +62,14 @@ export function Testimonials() {
               </div>
 
               {/* Quote */}
-              <blockquote className="text-base text-muted-foreground mb-4 leading-relaxed font-sans italic">
+              <blockquote className="text-base text-white/90 mb-4 leading-relaxed font-sans italic">
                 "{testimonial.quote}"
               </blockquote>
 
               {/* Author */}
-              <div className="border-t border-glass-border/30 pt-4">
-                <div className="font-bold text-foreground text-base font-sans">{testimonial.author}</div>
-                <div className="text-sm text-muted-foreground font-sans">{testimonial.role}</div>
+              <div className="border-t border-white/30 pt-4">
+                <div className="font-bold text-white text-base font-sans">{testimonial.author}</div>
+                <div className="text-sm text-white/70 font-sans">{testimonial.role}</div>
                 <div className="text-[#fe9e01] font-semibold text-sm font-sans">{testimonial.company}</div>
               </div>
             </motion.div>

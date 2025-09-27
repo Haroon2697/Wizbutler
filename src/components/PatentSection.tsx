@@ -13,7 +13,7 @@ export function PatentSection() {
   ];
 
   return (
-    <section className="py-24 bg-background relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-br from-[#43217a] via-[#43217a]/90 to-[#fe9e01]/40 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-cyber-grid opacity-10" />
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-[#43217a]/10 to-[#fe9e01]/10 rounded-full blur-3xl" />
@@ -31,7 +31,7 @@ export function PatentSection() {
             >
               {/* Tagline */}
               <div className="space-y-4">
-                <h2 className="text-4xl md:text-5xl font-bold text-black font-sans">
+                <h2 className="text-4xl md:text-5xl font-bold text-white font-sans">
                   Built by visionaries for visionaries
                 </h2>
                 <div className="w-24 h-1 bg-gradient-to-r from-[#43217a] to-[#fe9e01] rounded-full"></div>
@@ -42,17 +42,17 @@ export function PatentSection() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
-                className="bg-white p-8 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.1)] border border-[#43217a]/20"
+                className="bg-white/10 backdrop-blur-xl p-8 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.1)] border border-white/20"
               >
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 rounded-full bg-[#43217a] flex items-center justify-center flex-shrink-0">
                     <Award className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <blockquote className="text-lg text-muted-foreground italic font-sans leading-relaxed">
+                    <blockquote className="text-lg text-white/90 italic font-sans leading-relaxed">
                       "Current invention gives greater benefits to the operators"
                     </blockquote>
-                    <p className="text-sm text-[#43217a] font-semibold mt-2 font-sans">
+                    <p className="text-sm text-white font-semibold mt-2 font-sans">
                       Australian Patent Office
                     </p>
                   </div>
@@ -66,7 +66,7 @@ export function PatentSection() {
                 transition={{ delay: 0.4, duration: 0.8 }}
                 className="space-y-4"
               >
-                <h3 className="text-xl font-bold text-black font-sans">
+                <h3 className="text-xl font-bold text-white font-sans">
                   Patents granted in USA, Canada, Singapore, Malaysia, India, other countries in pending
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
@@ -78,8 +78,8 @@ export function PatentSection() {
                       transition={{ delay: 0.5 + index * 0.1, duration: 0.5 }}
                       className={`p-3 rounded-lg text-center font-sans ${
                         patent.status === "Granted"
-                          ? "bg-[#43217a] text-white"
-                          : "bg-gray-100 text-gray-700"
+                          ? "bg-white text-[#43217a]"
+                          : "bg-white/20 text-white"
                       }`}
                     >
                       <div className="font-semibold text-sm">{patent.country}</div>
@@ -98,10 +98,10 @@ export function PatentSection() {
               className="space-y-8"
             >
               <div className="text-center lg:text-left">
-                <h3 className="text-3xl md:text-4xl font-bold text-black mb-4 font-sans">
+                <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 font-sans">
                   Ready to Transform Your Venue?
                 </h3>
-                <p className="text-lg text-muted-foreground mb-8 font-sans">
+                <p className="text-lg text-white/80 mb-8 font-sans">
                   Join the visionaries who are already revolutionizing their space management
                 </p>
               </div>
@@ -143,7 +143,7 @@ export function PatentSection() {
                 transition={{ delay: 0.6, duration: 0.8 }}
                 className="text-center lg:text-left"
               >
-                <p className="text-sm text-muted-foreground font-sans">
+                <p className="text-sm text-white/80 font-sans">
                   <Globe className="w-4 h-4 inline mr-2" />
                   Available worldwide • 24/7 Support • Free Consultation
                 </p>
