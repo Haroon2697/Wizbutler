@@ -10,7 +10,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-[#43217a] backdrop-blur-xl border-t border-glass-border/30 py-16 relative overflow-hidden">
+    <footer className="bg-gradient-to-br from-[#43217a] via-[#43217a]/90 to-[#fe9e01]/40 backdrop-blur-xl border-t border-glass-border/30 py-16 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-cyber-grid opacity-10" />
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-gradient-radial from-cyber-purple/10 to-transparent rounded-full blur-3xl" />
@@ -56,11 +56,11 @@ export function Footer() {
             <h3 className="text-lg font-bold text-white font-sans">Contact</h3>
             <div className="space-y-4">
               <a
-                href="mailto:joyce@synergysrestaurantgroup.com"
+                href="mailto:wizbutler@synergysrestaurantgroup.com"
                 className="flex items-center space-x-3 text-white/80 hover:text-white transition-colors magnetic font-sans"
               >
                 <Mail className="w-5 h-5 text-[#43217a] hover:text-[#fe9e01] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)]" />
-                <span className="text-sm font-sans">joyce@synergysrestaurantgroup.com</span>
+                <span className="text-sm font-sans">wizbutler@synergysrestaurantgroup.com</span>
               </a>
               <a
                 href="tel:+14152994019"

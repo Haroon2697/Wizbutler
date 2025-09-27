@@ -18,10 +18,11 @@ export function Testimonials() {
   ];
 
   return (
-    <section className="py-16 bg-[#fe9e01] relative overflow-hidden">
+    <section className="py-16 bg-gradient-to-br from-[#fe9e01] via-[#fe9e01]/90 to-[#43217a]/90 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-cyber-grid opacity-10" />
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-[#43217a]/10 to-[#fe9e01]/10 rounded-full blur-3xl" />
+      <div className="absolute top-1/4 left-1/4 w-80 h-80 bg-gradient-to-r from-[#43217a]/15 to-[#fe9e01]/15 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}

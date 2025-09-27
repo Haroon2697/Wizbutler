@@ -51,7 +51,7 @@ export function Demo() {
     } catch (error) {
       toast({
         title: "Something went wrong",
-        description: "Please try again or contact us directly at joyce@synergysrestaurantgroup.com",
+        description: "Please try again or contact us directly at wizbutler@synergysrestaurantgroup.com",
         variant: "destructive",
       });
     } finally {
