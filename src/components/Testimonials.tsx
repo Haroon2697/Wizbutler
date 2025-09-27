@@ -18,7 +18,7 @@ export function Testimonials() {
   ];
 
   return (
-    <section className="py-16 bg-[#fe9e01] dark:bg-background relative overflow-hidden">
+    <section className="py-16 bg-[#fe9e01] relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-cyber-grid opacity-10" />
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-[#43217a]/10 to-[#fe9e01]/10 rounded-full blur-3xl" />
@@ -31,10 +31,10 @@ export function Testimonials() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white dark:text-[#fe9e01] font-sans">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white font-sans">
             What Our Clients Say
           </h2>
-          <p className="text-lg text-white/80 dark:text-muted-foreground max-w-xl mx-auto font-sans font-light">
+          <p className="text-lg text-white/80 max-w-xl mx-auto font-sans font-light">
             Real results from real venues using WizButler
           </p>
         </motion.div>
@@ -48,11 +48,11 @@ export function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2, duration: 0.8 }}
               whileHover={{ y: -5, scale: 1.02 }}
-              className="glass-card p-6 magnetic group dark:shadow-[0_0_25px_rgba(251,191,36,0.2)] dark:hover:shadow-[0_0_35px_rgba(251,191,36,0.4)]"
+              className="glass-card p-6 magnetic group"
             >
               {/* Quote Icon */}
               <div className="flex justify-center mb-4">
-                <div className="w-12 h-12 rounded-xl bg-[#43217a] dark:bg-[#43217a] flex items-center justify-center shadow-[0_0_15px_rgba(67,33,122,0.4)] dark:shadow-[0_0_15px_rgba(67,33,122,0.4)]">
+                <div className="w-12 h-12 rounded-xl bg-[#43217a] flex items-center justify-center shadow-[0_0_15px_rgba(67,33,122,0.4)]">
                   <Quote className="w-6 h-6 text-white" />
                 </div>
               </div>

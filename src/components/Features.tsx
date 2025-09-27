@@ -43,7 +43,7 @@ export function Features() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-black dark:text-[#fe9e01] font-sans">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-black font-sans">
             Powerful Features for Modern Venues
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-sans font-light">
@@ -60,7 +60,7 @@ export function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2, duration: 0.8 }}
               whileHover={{ y: -10, scale: 1.02 }}
-              className="glass-card p-8 magnetic group dark:shadow-[0_0_25px_rgba(251,191,36,0.2)] dark:hover:shadow-[0_0_35px_rgba(251,191,36,0.4)]"
+              className="glass-card p-8 magnetic group"
             >
               <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300 bg-[#43217a] text-white shadow-[0_0_20px_rgba(67,33,122,0.4)] group-hover:bg-[#fe9e01]`}>
                 <feature.icon className="w-8 h-8 text-white" />
@@ -88,9 +88,9 @@ export function Features() {
             <motion.div
               key={feature.text}
               whileHover={{ scale: 1.05 }}
-              className="glass-card px-6 py-4 flex items-center space-x-3 border-blue-400/20 shadow-[0_0_8px_rgba(59,130,246,0.1)] hover:shadow-[0_0_12px_rgba(59,130,246,0.2)] dark:shadow-[0_0_15px_rgba(251,191,36,0.2)] dark:hover:shadow-[0_0_25px_rgba(251,191,36,0.4)]"
+              className="glass-card px-6 py-4 flex items-center space-x-3 border-blue-400/20 shadow-[0_0_8px_rgba(59,130,246,0.1)] hover:shadow-[0_0_12px_rgba(59,130,246,0.2)]"
             >
-              <feature.icon className="w-5 h-5 text-[#43217a] dark:text-[#fe9e01] hover:text-[#fe9e01] dark:hover:text-[#43217a] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)] dark:drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
+              <feature.icon className="w-5 h-5 text-[#43217a] hover:text-[#fe9e01] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)]" />
               <span className="font-medium text-foreground font-sans">{feature.text}</span>
             </motion.div>
           ))}

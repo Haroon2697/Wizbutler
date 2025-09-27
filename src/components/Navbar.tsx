@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { Phone } from "lucide-react";
 
 export function Navbar() {
@@ -37,16 +36,16 @@ export function Navbar() {
             <img 
               src="/images/logo.png" 
               alt="Logo" 
-              className="w-24 h-24 rounded-lg object-contain invert dark:invert-0" 
+              className="w-24 h-24 rounded-lg object-contain invert" 
             />
           </motion.a>
 
           {/* Navigation Links */}
           <div className="flex items-center space-x-6">
-            {["Features", "About Joyce", "Contact"].map((link, index) => (
+            {["Features", "Contact"].map((link, index) => (
               <motion.a
                 key={link}
-                href={`#${link === "About Joyce" ? "about-joyce" : link.toLowerCase()}`}
+                href={`#${link.toLowerCase()}`}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
@@ -60,15 +59,14 @@ export function Navbar() {
           {/* CTA & Theme Toggle */
           }
           <div className="flex items-center space-x-4">
-            <a href="tel:+14152994019" aria-label="Call us" className="flex w-10 h-10 rounded-lg border border-gray-200 dark:border-gray-800 items-center justify-center hover:bg-accent/10 hover:shadow-[0_0_20px_rgba(254,158,1,0.5)] hover:border-[#fe9e01]">
+            <a href="tel:+14152994019" aria-label="Call us" className="flex w-10 h-10 rounded-lg border border-gray-200 items-center justify-center hover:bg-accent/10 hover:shadow-[0_0_20px_rgba(254,158,1,0.5)] hover:border-[#fe9e01]">
               <Phone className="w-5 h-5 drop-shadow-[0_0_8px_rgba(254,158,1,0.6)]" />
             </a>
-            <ThemeToggle />
             <a
               href={import.meta.env.NEXT_PUBLIC_NEWSLETTER_URL || "https://www.linkedin.com/newsletters/restaurant-rescues-7344923332078669824"}
               className="flex"
             >
-              <Button className="btn-neon bg-[#43217a] dark:bg-[#fe9e01] text-white shadow-[0_0_20px_rgba(67,33,122,0.4)] dark:shadow-[0_0_20px_rgba(254,158,1,0.4)] hover:bg-[#fe9e01] dark:hover:bg-[#43217a] hover:shadow-[0_0_30px_rgba(254,158,1,0.6)] dark:hover:shadow-[0_0_30px_rgba(67,33,122,0.6)]">Subscribe</Button>
+              <Button className="btn-neon bg-[#43217a] text-white shadow-[0_0_20px_rgba(67,33,122,0.4)] hover:bg-[#fe9e01] hover:shadow-[0_0_30px_rgba(254,158,1,0.6)]">Subscribe</Button>
             </a>
           </div>
         </div>
