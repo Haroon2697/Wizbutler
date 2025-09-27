@@ -113,14 +113,14 @@ export function VenueFeatures() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="text-center mt-16"
+          className="text-center mt-12 sm:mt-16 px-4"
         >
-          <p className="text-base sm:text-lg text-gray-600 mb-6 font-sans px-4">
+          <p className="text-base sm:text-lg text-gray-600 mb-6 font-sans max-w-2xl mx-auto">
             Ready to see how WizButler can transform your specific venue type?
           </p>
           <motion.button 
             whileHover={{ scale: 1.05 }} 
-            className="btn-neon px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg bg-[#fe9e01] text-white shadow-[0_0_20px_rgba(254,158,1,0.3)] hover:bg-[#43217a] hover:shadow-[0_0_40px_rgba(254,158,1,0.8)] font-sans w-full sm:w-auto mx-4 sm:mx-0"
+            className="btn-neon px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg bg-[#fe9e01] text-white shadow-[0_0_20px_rgba(254,158,1,0.3)] hover:bg-[#43217a] hover:shadow-[0_0_40px_rgba(254,158,1,0.8)] font-sans w-full sm:w-auto max-w-sm sm:max-w-none mx-auto sm:mx-0"
           >
             Get Your Custom Demo
           </motion.button>

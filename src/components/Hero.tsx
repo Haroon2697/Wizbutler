@@ -7,6 +7,7 @@ export function Hero() {
   const particles = Array.from({ length: 8 }, (_, i) => ({
     id: i,
     size: Math.random() * 20 + 10,
+    mobileSize: Math.random() * 8 + 4, // Smaller size for mobile
     delay: Math.random() * 2,
     duration: 6 + Math.random() * 4,
   }));
@@ -20,7 +21,7 @@ export function Hero() {
       {particles.map((particle) => (
         <motion.div
           key={particle.id}
-          className="particle bg-[#43217a]"
+          className="particle bg-[#43217a] hidden sm:block"
           style={{
             width: particle.size,
             height: particle.size,
@@ -32,6 +33,32 @@ export function Hero() {
             x: [0, 10, -10, 0],
             rotate: [0, 180, 360],
             scale: [1, 1.2, 0.8, 1],
+          }}
+          transition={{
+            duration: particle.duration,
+            delay: particle.delay,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+      ))}
+
+      {/* Mobile Particles - Smaller */}
+      {particles.map((particle) => (
+        <motion.div
+          key={`mobile-${particle.id}`}
+          className="particle bg-[#43217a] block sm:hidden"
+          style={{
+            width: particle.mobileSize,
+            height: particle.mobileSize,
+            left: `${Math.random() * 100}%`,
+            top: `${Math.random() * 100}%`,
+          }}
+          animate={{
+            y: [0, -10, 5, 0],
+            x: [0, 5, -5, 0],
+            rotate: [0, 180, 360],
+            scale: [1, 1.1, 0.9, 1],
           }}
           transition={{
             duration: particle.duration,
@@ -102,9 +129,9 @@ export function Hero() {
          
         </motion.div>
 
-        {/* Floating geometric shapes */}
+        {/* Floating geometric shapes - Hidden on mobile */}
         <motion.div
-          className="absolute bottom-1/4 left-1/4 w-32 h-32 border-2 border-neon-purple/30 rounded-2xl"
+          className="absolute bottom-1/4 left-1/4 w-32 h-32 border-2 border-neon-purple/30 rounded-2xl hidden sm:block"
           animate={{
             rotate: [0, 45, 90, 135, 180, 225, 270, 315, 360],
             scale: [1, 1.1, 1, 0.9, 1],
@@ -117,7 +144,7 @@ export function Hero() {
           }}
         />
         <motion.div
-          className="absolute top-3/4 right-1/4 w-24 h-24 bg-[#43217a]/20 rounded-full"
+          className="absolute top-3/4 right-1/4 w-24 h-24 bg-[#43217a]/20 rounded-full hidden sm:block"
           animate={{
             y: [0, -30, 0],
             x: [0, 20, 0],
