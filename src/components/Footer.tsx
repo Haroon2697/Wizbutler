@@ -115,7 +115,7 @@ export function Footer() {
                            dark:border-yellow-400/30"
                   aria-label={social.label}
                 >
-                  <social.icon className="w-5 h-5 text-[#43217a] dark:text-[#fe9e01] hover:text-[#fe9e01] dark:hover:text-[#43217a] drop-shadow-[0_0_6px_rgba(67,33,122,0.5)] dark:drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
+                  <social.icon className="w-5 h-5 text-white dark:text-[#fe9e01] hover:text-white dark:hover:text-[#43217a] drop-shadow-[0_0_6px_rgba(255,255,255,0.5)] dark:drop-shadow-[0_0_6px_rgba(254,158,1,0.5)]" />
                 </motion.a>
               ))}
             </div>
