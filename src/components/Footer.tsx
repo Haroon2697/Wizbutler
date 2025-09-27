@@ -27,9 +27,9 @@ export function Footer() {
           >
             <div className="flex items-center space-x-3">
               <img
-                src="/images/logo.png"
-                alt="Synergy Restaurant Group"
-                className="w-12 h-12 object-contain invert"
+                src="/images/wizlogo.png"
+                alt="WizButler Logo"
+                className="w-12 h-12 object-contain invert-0"
               />
               <div>
                 <div className="text-xl font-bold text-white font-sans">

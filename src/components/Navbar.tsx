@@ -34,9 +34,11 @@ export function Navbar() {
             aria-label="Home"
           >
             <img 
-              src="/images/logo.png" 
-              alt="Logo" 
-              className="w-24 h-24 rounded-lg object-contain invert" 
+              src="/images/wizlogo.png" 
+              alt="WizButler Logo" 
+              className={`w-24 h-24 rounded-lg object-contain ${
+                scrolled ? "invert-0" : "invert"
+              }`}
             />
           </motion.a>
 
