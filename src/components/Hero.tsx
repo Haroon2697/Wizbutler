@@ -12,9 +12,9 @@ export function Hero() {
   }));
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cyber-grid">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-[#43217a]/10" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
+      {/* Background Elements */}
+      <div className="absolute inset-0 bg-cyber-grid opacity-20" />
       
       {/* Floating Particles */}
       {particles.map((particle) => (
@@ -70,7 +70,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight font-sans"
+          className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight font-sans text-black"
         >
           The Dynamic{" "}
           <span className="text-[#43217a] font-bold">All-in-One</span>{" "}
@@ -83,7 +83,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-              className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto font-sans font-light"
+              className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto font-sans font-light"
         >
           Automate space management, optimize layouts, and boost revenue — with{" "}
           <span className="text-primary font-semibold font-sans">seamless integration</span>

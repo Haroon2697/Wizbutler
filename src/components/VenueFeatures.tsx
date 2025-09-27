@@ -49,7 +49,7 @@ export function VenueFeatures() {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-br from-[#43217a] via-[#43217a]/90 to-[#fe9e01]/40 relative overflow-hidden">
+    <section className="py-24 bg-white relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-cyber-grid opacity-20" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-radial from-cyber-purple/10 to-transparent rounded-full blur-3xl" />
@@ -63,10 +63,10 @@ export function VenueFeatures() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white font-sans">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-black font-sans">
             Tailored for Every Venue Type
           </h2>
-          <p className="text-xl text-white/80 max-w-2xl mx-auto font-sans font-light">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto font-sans font-light">
             WizButler adapts to your specific venue needs with specialized features and workflows
           </p>
         </motion.div>
@@ -80,13 +80,13 @@ export function VenueFeatures() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2, duration: 0.8 }}
               whileHover={{ y: -10, scale: 1.02 }}
-              className="bg-white/10 backdrop-blur-xl rounded-2xl p-6 border border-white/20 hover:bg-white/20 hover:border-[#fe9e01]/50 transition-all duration-500 h-full shadow-[0_0_20px_rgba(0,0,0,0.1)] hover:shadow-[0_0_30px_rgba(254,158,1,0.2)]"
+              className="bg-white rounded-2xl p-6 border border-gray-200 hover:border-[#fe9e01] transition-all duration-500 h-full shadow-[0_0_20px_rgba(0,0,0,0.1)] hover:shadow-[0_0_30px_rgba(254,158,1,0.2)]"
             >
               <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300 bg-[#fe9e01] text-white shadow-[0_0_20px_rgba(254,158,1,0.4)] group-hover:bg-[#43217a]`}>
                 <venue.icon className="w-8 h-8 text-white" />
               </div>
               
-              <h3 className="text-xl font-bold mb-4 text-white group-hover:text-[#fe9e01] transition-all duration-300 font-sans">
+              <h3 className="text-xl font-bold mb-4 text-black group-hover:text-[#fe9e01] transition-all duration-300 font-sans">
                 {venue.title}
               </h3>
               
@@ -97,7 +97,7 @@ export function VenueFeatures() {
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.2 + featureIndex * 0.1 + 0.5 }}
-                    className="flex items-start text-sm text-white/90 font-sans"
+                    className="flex items-start text-sm text-gray-600 font-sans"
                   >
                     <div className="w-2 h-2 rounded-full bg-[#fe9e01] mr-3 mt-2 flex-shrink-0" />
                     <span>{feature}</span>
